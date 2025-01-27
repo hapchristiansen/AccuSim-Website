@@ -1,0 +1,477 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a; /* Same blue as the HTML */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.header .title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Grid Container for Tiles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Tile Styles */
+.tile {
+  text-decoration: none;
+  color: black;
+}
+
+.tile-background {
+  position: relative;
+  height: 250px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile-background:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tile h2 {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a; /* Blue header */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.header .title {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+/* Tile */
+.tile {
+  text-decoration: none;
+  color: black;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tile .tile-background {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile h2 {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* Add keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tile animation */
+.tile {
+  text-decoration: none;
+  color: black;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Initial state for fade-in */
+  animation: fadeIn 0.8s ease forwards; /* Apply fade-in animation */
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Delay each tile */
+.tile:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.tile:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.tile:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+input {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+/* Page Transition Effects */
+.page-transition {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Banking Page Layout */
+.banking-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Login Card */
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  color: #004d00;
+  font-size: 1.5rem;
+}
+
+.login-card p {
+  margin: 0.5rem 0 1.5rem;
+  color: #555;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.password-container .show-password {
+  background: none;
+  border: none;
+  color: #004d00;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container label {
+  margin-left: 0.5rem;
+}
+
+.sign-on {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sign-on:hover {
+  background-color: #003300;
+}
+
+.login-card a {
+  display: block;
+  color: #004d00;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+/* Promotion Section */
+.promotion {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.promotion h1 {
+  font-size: 2rem;
+  color: #004d00;
+  margin-bottom: 1rem;
+}
+
+.promotion p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.promotion .get-started {
+  padding: 0.75rem 1.5rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.promotion .get-started:hover {
+  background-color: #003300;
+}
+/* Banking Page Layout */
+.banking-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9fafb;
+  height: 100vh;
+}
+
+/* Login Card */
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-card h2 {
+  margin: 0;
+  color: #004d00;
+  font-size: 1.5rem;
+}
+
+.login-card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.show-password {
+  background: none;
+  border: none;
+  color: #004d00;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container label {
+  margin-left: 0.5rem;
+}
+
+.sign-on {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sign-on:hover {
+  background-color: #003300;
+}
+
+.login-card a {
+  display: block;
+  color: #004d00;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
