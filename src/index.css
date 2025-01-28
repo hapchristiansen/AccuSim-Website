@@ -475,3 +475,156 @@ body {
 .login-card a:hover {
   text-decoration: underline;
 }
+.banking-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  color: #004d00;
+  font-size: 1.5rem;
+}
+
+.login-card p {
+  margin: 0.5rem 0 1.5rem;
+  color: #555;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.show-password {
+  background: none;
+  border: none;
+  color: #004d00;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container label {
+  margin-left: 0.5rem;
+}
+
+.sign-on {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sign-on:hover {
+  background-color: #003300;
+}
+
+.login-card a {
+  display: block;
+  color: #004d00;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+.promotion {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.promotion h1 {
+  font-size: 2rem;
+  color: #004d00;
+  margin-bottom: 1rem;
+}
+
+.promotion p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.promotion .get-started {
+  padding: 0.75rem 1.5rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.promotion .get-started:hover {
+  background-color: #003300;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d00; /* Forest Green */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

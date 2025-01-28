@@ -1,34 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-function Header({ backgroundColor, onLogout }) {
+const Header = () => {
   return (
-    <header
-      style={{
-        backgroundColor,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "1rem 2rem",
-        color: "white",
-      }}
-    >
-      <h1 style={{ margin: 0, fontSize: "1.5rem" }}>Bank of AccuSim</h1>
-      {onLogout && (
-        <button
-          onClick={onLogout}
-          style={{
-            backgroundColor: "transparent",
-            color: "white",
-            border: "none",
-            cursor: "pointer",
-            fontSize: "1rem",
-          }}
-        >
-          Logout
-        </button>
-      )}
+    <header className="header">
+      <div className="title">Bank of AccuSim</div>
+      <nav className="nav-links">
+        <NavLink to="/" activeClassName="active" exact>
+          Home
+        </NavLink>
+        <NavLink to="/banking" activeClassName="active">
+          Banking
+        </NavLink>
+        <NavLink to="/about" activeClassName="active">
+          About Us
+        </NavLink>
+        <NavLink to="/contact" activeClassName="active">
+          Contact
+        </NavLink>
+      </nav>
     </header>
   );
-}
+};
 
 export default Header;
