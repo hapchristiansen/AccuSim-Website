@@ -22,6 +22,24 @@ const adSlides = [
   },
 ];
 
+const featureCards = [
+  {
+    title: "Earn a $200 cash rewards bonus",
+    text: "Plus, earn unlimited 2% cash rewards on purchases with $0 annual fee. Terms apply.",
+    button: "Learn more >",
+  },
+  {
+    title: "New customer? Say hello to a $125 bonus",
+    text: "Open a Clear Access Banking account, great for students & more, complete offer requirements.",
+    button: "See offer details >",
+  },
+  {
+    title: "Charting the economy’s next chapter",
+    text: "Our forecasts and potential investment opportunities for the coming year.",
+    button: "Get the 2025 Outlook >",
+  },
+];
+
 const BankingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showPassword, setShowPassword] = useState(false);
@@ -35,8 +53,8 @@ const BankingPage = () => {
 
   return (
     <div className="banking-page">
-      {/* Login Section */}
-      <div className="login-container">
+      {/* Left Column - Login Section */}
+      <div className="left-column">
         <div className="login-card">
           <h2 className="login-title">Good Afternoon</h2>
           <p className="login-subtitle">Sign on to manage your accounts.</p>
@@ -63,7 +81,7 @@ const BankingPage = () => {
               <label htmlFor="save-username">Save username</label>
             </div>
             <button className="sign-on-btn" type="submit">Sign On</button>
-            <button className="enroll-btn" type="button" disabled>Enroll</button>
+            <button className="enroll-btn" type="button">Enroll</button>
             <div className="login-links">
               <a href="#">Forgot username or password?</a>
               <a href="#">Security Center</a>
@@ -73,8 +91,8 @@ const BankingPage = () => {
         </div>
       </div>
 
-      {/* Advertisement Section - Slideshow */}
-      <div className="ad-section">
+      {/* Middle Column - Ad Slideshow */}
+      <div className="middle-column">
         <div className="ad-card">
           <img src={adSlides[currentSlide].image} alt="Ad Slide" className="ad-image" />
           <div className="ad-content">
@@ -82,6 +100,17 @@ const BankingPage = () => {
             <p>{adSlides[currentSlide].text}</p>
             <button className="ad-button">{adSlides[currentSlide].button}</button>
           </div>
+        </div>
+
+        {/* Feature Cards Below the Ad */}
+        <div className="features-container">
+          {featureCards.map((card, index) => (
+            <div className="feature-card" key={index}>
+              <h3>{card.title}</h3>
+              <p>{card.text}</p>
+              <a href="#" className="feature-link">{card.button}</a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
