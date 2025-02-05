@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import navigation
 import "../index.css";
 
 const adSlides = [
@@ -43,6 +44,7 @@ const featureCards = [
 const BankingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate(); // Ensure navigation is set up
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -81,7 +83,16 @@ const BankingPage = () => {
               <label htmlFor="save-username">Save username</label>
             </div>
             <button className="sign-on-btn" type="submit">Sign On</button>
-            <button className="enroll-btn" type="button">Enroll</button>
+            
+            {/* ✅ Updated Enroll Button to Navigate to /enroll */}
+            <button 
+              className="enroll-btn" 
+              type="button" 
+              onClick={() => navigate("/enroll")}
+            >
+              Enroll
+            </button>
+
             <div className="login-links">
               <a href="#">Forgot username or password?</a>
               <a href="#">Security Center</a>

@@ -6,6 +6,7 @@ import BankingPage from "./components/BankingPage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import Login from "./components/Login";
+import EnrollPage from "./components/EnrollPage"; // Ensure this is imported
 import "./index.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/enroll" element={<EnrollPage />} /> {/* Ensure this route exists */}
           </Routes>
         </div>
       </div>

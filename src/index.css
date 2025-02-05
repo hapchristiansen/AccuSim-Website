@@ -349,3 +349,152 @@ body {
   flex-direction: column;
   gap: 0; /* Reduce spacing between ad and features */
 }
+/* Enroll Page Layout */
+.enroll-page-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enroll-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.enroll-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a2a12;
+}
+
+.enroll-header p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Enroll Page Columns */
+.enroll-content {
+  display: flex;
+  gap: 40px;
+}
+
+.enroll-left {
+  width: 40%;
+}
+
+.enroll-left h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0a2a12;
+}
+
+.enroll-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.enroll-left ul li {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Enrollment Form */
+.enroll-form-container {
+  width: 60%;
+}
+
+.enroll-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.enroll-form h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Enroll Submit Button */
+.enroll-submit-btn {
+  width: 100%;
+  background: #0a2a12;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.enroll-submit-btn:hover {
+  background: #06200c;
+}
+
+/* Enrollment Message */
+.enroll-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: green;
+}
+/* Red Asterisks for Required Fields */
+.required {
+  color: red;
+  font-weight: bold;
+  margin-left: 4px;
+}
+/* Password Requirements List */
+.password-requirements {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.password-requirements li {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 3px;
+}
+
+/* Highlight Validated Rules in Green */
+.password-requirements li.valid {
+  color: green;
+  font-weight: bold;
+}
+
+/* Confirm Password Match Styling */
+.valid-text {
+  color: green;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
